@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Binary Calculator</title>
+</head>
+<body>
+    <table class="header">
+        <tr class="power">
+            <td class="blank"></td>
+            <td id="p1" colspan="8"></td>
+            <td id="overflow" colspan="2" rowspan="2"></td>
+        </tr>
+        <tr class="carry">
+            <td class="blank"></td>
+            <td id="c0"></td>
+            <td id="c1"></td>
+            <td id="c2"></td>
+            <td id="c3"></td>
+            <td id="c4"></td>
+            <td id="c5"></td>
+            <td id="c6"></td>
+            <td id="c7"></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr class="num">
+            <td></td>
+            <td class="bin click" id="00"></td>
+            <td class="bin click" id="01"></td>
+            <td class="bin click" id="02"></td>
+            <td class="bin click" id="03"></td>
+            <td class="bin click" id="04"></td>
+            <td class="bin click" id="05"></td>
+            <td class="bin click" id="06"></td>
+            <td class="bin click" id="07"></td>
+            <td class="equals"></td>
+            <td class="denary">
+                <span class="text" id="denaryA">0</span>
+            </td>
+        </tr>
+        <tr class="num">
+            <td class="plus"></td>
+            <td class="bin click" id="10"></td>
+            <td class="bin click" id="11"></td>
+            <td class="bin click" id="12"></td>
+            <td class="bin click" id="13"></td>
+            <td class="bin click" id="14"></td>
+            <td class="bin click" id="15"></td>
+            <td class="bin click" id="16"></td>
+            <td class="bin click" id="17"></td>
+            <td class="equals"></td>
+            <td class="denary">
+                <span class="text" id="denaryB">0</span>
+            </td>
+        </tr>
+    </table>
+
+    <table class="solution">
+        <tr class="divide">
+            <td class="blank"></td>
+            <td colspan="8"></td>
+            <td></td>
+            <td class="answer"></td>
+        </tr>
+        <tr class="num">
+            <td id="extrabit"></td>
+            <td class="bin" id="20"></td>
+            <td class="bin" id="21"></td>
+            <td class="bin" id="22"></td>
+            <td class="bin" id="23"></td>
+            <td class="bin" id="24"></td>
+            <td class="bin" id="25"></td>
+            <td class="bin" id="26"></td>
+            <td class="bin" id="27"></td>
+            <td class="equals"></td>
+            <td class="denary">
+                <span class="text" id="denaryC">0</span>
+            </td>
+        </tr>
+
+        <tr class="divide">
+            <td class="blank"></td>
+            <td colspan="8"></td>
+            <td></td>
+            <td class="answer"></td>
+        </tr>
+    </table>
+
+    <script src="js/helper.js"></script>    
+    <script src="js/main.js"></script>
+
+</body>
+</html>

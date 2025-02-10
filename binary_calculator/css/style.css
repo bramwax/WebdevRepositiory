@@ -9,7 +9,7 @@ table {
     background-color: #58885e27;
 }
 
-td { width: 100px; background-repeat: no-repeat;}
+td { min-width: 100px; background-repeat: no-repeat;}
 
 .plus { background-image: url(../assets/images/plus.svg); }
 .equals { background-image: url(../assets/images/equals.svg); }

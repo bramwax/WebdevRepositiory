@@ -27,7 +27,9 @@ body { background-color: #e4e9e9; }
 
         .header {
             height: 10vw;
-            background-color: #333333; }
+            background-color: #333333;
+            background-image: url(../assets/images/banner.svg);
+        }
 
             .header td {
                 border-radius: 6px;

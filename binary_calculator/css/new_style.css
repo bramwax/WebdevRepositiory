@@ -1,14 +1,20 @@
-* { margin: 0; padding: 0; }
+* {
+    margin: 0;
+    padding: 0;
+}
 
-body { background-color: #e4e9e9; }
+body {
+    background-color: #e4e9e9;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .container {
     position: absolute;
-    left: 50vw; top: 50vh;
+    left: 50vw; top: 44vh;
     transform: translate(-50%, -50%);
     /* ---------------------------------------- */
     min-width: 64vw;
-
+    border: 1vw solid #58885e27;
 }
 
     table {
@@ -19,55 +25,99 @@ body { background-color: #e4e9e9; }
 
     td {
         width: 4.8vw;
-        outline: 1px solid grey;
-        background-size: 100%;
-        background-repeat: no-repeat;
     }
-
-        .denary { width: 10vw; }
 
         .header {
             height: 10vw;
             background-color: #333333;
             background-image: url(../assets/images/banner.svg);
-            background-size: 99%;
+            background-size: 100%;
         }
 
             .header td {
                 border-radius: 6px;
             }
 
+
+        .half-height {
+            height: 2vw;
+            text-align: center;
+
+        }
+
+        .power td:not(.blank, #warning) {
+            font-size: 1.4vw;
+            color: #A0BEBB77;
+            vertical-align: bottom;
+            border-bottom: 1.5px solid #A0BEBB77;
+        }
+
+        .carry td:not(.blank, #warning) {
+            background-image: url(../assets/images/carry.svg);
+            background-size: 100%;
+            opacity: 0;
+        }
+
+            #warning {
+                background-image: url(../assets/images/overflow_text.svg);
+                background-size: 100%;
+                opacity: 0;
+            }
+
+        .denary {
+            width: 10vw;
+            padding-left: .8vw;
+            vertical-align: center;
+            font-size: 4vw;
+            color: #A0BEBB;
+        }
+
+
         .full-height {
             height: 4.8vw;
         }
 
-            .full-height td {
+            .full-height td:not(.plus, .blank, .equals, .denary) {
                 border-radius: 6px;
                 background-image: url(../assets/images/zero.svg);
+                background-size: 100%;
             }
 
             .full-height.solved td:not(#flow, .equals, .denary) {
                 background-color: #E88300;
             }
 
-            .full-height.button td:not(.blank, .equals, .denary) {
+            .full-height.button td:not(.plus, .blank, .equals, .denary) {
                 background-color: #666666;
             }
 
-            .full-height.button td:hover:not(.blank, .equals, .denary) {
+            .full-height.button td:hover:not(.plus, .blank, .equals, .denary) {
                 cursor: pointer;
                 background-color: #444444;
             }
 
+            .plus {
+                background-image: url(../assets/images/plus.svg);
+                background-size: 100%;
+            }
 
-        .half-height {
-            height: 2vw;
+            .equals {
+                background-image: url(../assets/images/equals.svg);
+                background-size: 100%;
+            }
+
+        #flow {
+            background-image: url(../assets/images/x.svg);
+            background-size: 100%;
+            background-color: #990000;
+            opacity: 0;
         }
 
         .divide {
             height: 0.4vw;
         }
-        .divide td:not(.blank) {
-            background-color: #A0BEBB;
-        }
+
+            .divide td:not(.blank) {
+                background-color: #A0BEBB;
+            }
 

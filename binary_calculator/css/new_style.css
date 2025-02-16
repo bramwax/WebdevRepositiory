@@ -21,6 +21,7 @@ body { background-color: #e4e9e9; }
         width: 4.8vw;
         outline: 1px solid grey;
         background-size: 100%;
+        background-repeat: no-repeat;
     }
 
         .denary { width: 10vw; }
@@ -29,6 +30,7 @@ body { background-color: #e4e9e9; }
             height: 10vw;
             background-color: #333333;
             background-image: url(../assets/images/banner.svg);
+            background-size: 99%;
         }
 
             .header td {

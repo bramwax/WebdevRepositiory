@@ -1,0 +1,21 @@
+* { padding: 0px; margin: 0px; }
+
+body {
+    background-color: #fffbec;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.4vw;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    left: 50vw; top: 10vh;
+    transform: translate(-50%, 0);
+}
+
+table { outline: 1px solid brown; }
+
+#image {
+    width: 20vw; height: 20vw;
+    background-size: 20vw;
+}

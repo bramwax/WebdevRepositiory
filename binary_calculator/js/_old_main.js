@@ -7,10 +7,10 @@ function flip(num, bit) {
     // update (flip) the appropriate bit - variable and interface...
     if (binInput[num][bit] == 0) {
         binInput[num][bit] = 1;
-        elem.style.backgroundImage = "url(assets/images/one.svg)";
+        elem.style.backgroundImage = "url(assets/images/1.svg)";
     } else {
         binInput[num][bit] = 0;
-        elem.style.backgroundImage = "url(assets/images/zero.svg)";
+        elem.style.backgroundImage = "url(assets/images/0.svg)";
     }
 
 
@@ -35,12 +35,12 @@ function flip(num, bit) {
 
         let sElem = "2" + i;
         if (binSolution[i] == 1) {
-            document.getElementById(sElem).style.backgroundImage = "url(assets/images/one.svg)";
+            document.getElementById(sElem).style.backgroundImage = "url(assets/images/1_orange.svg)";
         } else {
-            document.getElementById(sElem).style.backgroundImage = "url(assets/images/zero.svg)";      
+            document.getElementById(sElem).style.backgroundImage = "url(assets/images/0_orange.svg)";      
         }
     }
-  
+    
     // update interface: denary values
     dnA.innerHTML = denInput[0];
     dnB.innerHTML = denInput[1];
@@ -76,8 +76,8 @@ const click = new Audio('assets/sounds/click_2.wav');
 const error = new Audio('assets/sounds/error.wav');
 
 //  page elements
-const ofl = document.getElementById("warning");
-const exb = document.getElementById("flow");
+const ofl = document.getElementById("overflow");
+const exb = document.getElementById("extrabit");
 const dnA = document.getElementById("denaryA");
 const dnB = document.getElementById("denaryB");
 const dnC = document.getElementById("denaryC");

@@ -1,79 +1,117 @@
-* { margin: 0px; padding: 0px; }
-
-body { background-color: #e4e9e9; }
-
-table {
-    margin: 0px auto 0px auto;
-    border-collapse: separate;
-    border-spacing: 20px 10px;
-    background-color: #58885e27;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-td { min-width: 100px; background-repeat: no-repeat;}
-
-.plus { background-image: url(../assets/images/plus.svg); }
-.equals { background-image: url(../assets/images/equals.svg); }
-.bin { background-image: url(../assets/images/0.svg);}
-.denary { width: 200px; }
-.text {
+body {
+    background-color: #e4e9e9;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    font-size: 90px;
-    color: rgb(90, 148, 150);
+    text-align: center;
 }
 
-/* ======================================== > powers of two, carry, and overflow warning text */
-table.header {
-    margin-top: 40px; padding-top: 20px;
-    border-radius: 12px 12px 0px 0px;
+.container {
+    position: absolute;
+    left: 50vw; top: 44vh;
+    transform: translate(-50%, -50%);
+/* ---------------------------------------- */
+    min-width: 64vw;
+    outline: 1vw solid #58885e27;
+    border-radius: 8px;
 }
 
-    .power { height: 60px; }
-    .carry { height: 30px; }
-    .carry td:not(.blank) {
-        background-image: url(../assets/images/carry.svg);
-        opacity: 0;
+    table {
+        border-collapse: separate;
+        border-spacing: 0.6vw;
+        background-color: #58885e27;
     }
 
-    #p1 {
-        background-image: url(../assets/images/powers.svg);
-        height: 100%;
-        opacity: 0.4;
+    td { width: 4.8vw; }
+
+    .header td {
+        height: 10vw;
+    /* ---------------------------------------- */
+        border-radius: 12px;
+    /* ---------------------------------------- */
+        background-color: #555555;
+        background-image: url(../assets/images/banner.svg);
+        background-size: 100%;
     }
 
-    #overflow {
-        width: 320px;
-        background-image: url(../assets/images/overflow_text.svg);
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        opacity: 0;
+    .half-height { height: 2vw; }
+
+    .power td:not(.blank, #warning) {
+        font-size: 1.4vw;
+        color: #a0bebbad;
+        vertical-align: bottom;
+        border-bottom: 1.5px solid #A0BEBB77;
     }
 
-/* ======================================== >> plus symbol, user selection << */
-.num { height: 100px; }
+        .carry td:not(.blank, #warning) {
+            background-image: url(../assets/images/carry.svg);
+            background-size: 100%;
+            opacity: 0;
+        }
 
-.click:hover {
-    cursor: pointer;
-    filter: brightness(70%);
-}
+            #warning {
+                background-image: url(../assets/images/overflow_text.svg);
+                background-size: 100%;
+                opacity: 0;
+            }
 
-/* ======================================== >> dividers, overflow icon, addition solution, denary equivalent << */
-.divide td:not(.blank) {
-    height: 6px;
-    background-color:  rgba(90, 148, 150, 0.4);
-}
+        .denary {
+            width: 10vw;
+            padding-left: .8vw;
+            vertical-align: center;
+            font-size: 4vw;
+            color: #A0BEBB;
+        }
 
-.solution {
-    padding-bottom: 20px;
-    border-spacing: 20px 14px;
-    border-radius: 0px 0px 12px 12px;
-}
 
-.solution .bin {
-    background-image: url(../assets/images/0_orange.svg);
-  }
+        .full-height {
+            height: 4.8vw;
+        }
 
-#extrabit {
-    background-image: url(../assets/images/x.svg);
-    opacity: 0;
-}
+            .full-height td:not(.plus, .blank, .equals, .denary) {
+                border-radius: 6px;
+                background-image: url(../assets/images/zero.svg);
+                background-size: 100%;
+            }
+
+            .full-height.solved td:not(#flow, .equals, .denary) {
+                background-color: #E88300;
+            }
+
+            .full-height.button td:not(.plus, .blank, .equals, .denary) {
+                background-color: #666666;
+            }
+
+            .full-height.button td:hover:not(.plus, .blank, .equals, .denary) {
+                cursor: pointer;
+                background-color: #444444;
+            }
+
+            .plus {
+                background-image: url(../assets/images/plus.svg);
+                background-size: 100%;
+            }
+
+            .equals {
+                background-image: url(../assets/images/equals.svg);
+                background-size: 100%;
+            }
+
+        #flow {
+            background-image: url(../assets/images/x.svg);
+            background-size: 100%;
+            background-color: #990000;
+            opacity: 0;
+        }
+
+        .divide {
+            height: 0.4vw;
+        }
+
+            .divide td:not(.blank) {
+                background-color: #A0BEBB;
+            }
+

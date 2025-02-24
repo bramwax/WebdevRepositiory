@@ -2,6 +2,8 @@ function clicked() {
     console.log("image clicked!!");
 
     if (clicks == -1) {
+        url = "url('assets/images/" + animals[currentIndex] + ".png')";
+        img.style.backgroundImage = url;
         sounds[currentIndex].play();
         clicks = 0;
     } else if (clicks == 0) {
@@ -37,6 +39,3 @@ let currentIndex = Math.floor(Math.random() * animals.length);
 
 let img = document.getElementById("image");
 let txt = document.getElementById("text");
-
-url = "url('assets/images/" + animals[currentIndex] + ".png')";
-img.style.backgroundImage = url;

@@ -14,10 +14,12 @@ body {
 
 }
 
-table { outline: 1px solid brown; }
-
 #image {
     width: 20vw; height: 20vw;
     background-size: 20vw;
-    background-image: url('assets/images/start.png');
+    background-image: url('assets/images/start.svg');
+}
+
+#text {
+    background-color: rgba(221, 221, 221, 0.4);
 }

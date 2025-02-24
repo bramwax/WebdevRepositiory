@@ -1,10 +1,7 @@
 function clicked() {
-    console.log("image clicked!!");
-
     if (clicks == -1) {
         url = "url('assets/images/" + animals[currentIndex] + ".svg')";
         img.style.backgroundImage = url;
-
         clicks = 0;
     } else if (clicks == 0) {
         txt.innerHTML = animals[currentIndex];
@@ -15,11 +12,10 @@ function clicked() {
         } else {
             currentIndex++;
         }
-        txt.innerHTML = "";
+        txt.innerHTML = "???";
         url = "url('assets/images/" + animals[currentIndex] + ".svg')";
         img.style.backgroundImage = url;
         clicks = 0;
-
     }
 }
 
@@ -30,6 +26,14 @@ let animals = [
     "PARROT","PENGUIN","RABBIT","RAM","RHINOCEROS","SEAL","SHEEP","SKUNK",
     "SLOTH","SNAIL","SNAKE","TIGER","TURKEY","WHALE","WORM"
 ];
+
+animals.forEach( (value,i) =>{
+    var random = Math.floor(Math.random() * animals.length);
+    var tmp = animals[random];
+    animals[random] = value;
+    animals[i] = tmp;
+});
+
 let currentIndex = Math.floor(Math.random() * animals.length);
 
 let img = document.getElementById("image");

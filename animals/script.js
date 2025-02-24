@@ -25,10 +25,10 @@ function clicked() {
 
 let clicks = -1;
 let animals = [
-    "ant","badger","beaver","bison","buffalo","camel","cat","chicken",
-    "cow","duck","monkey","mouse","octopus","orangutan","otter","ox",
-    "parrot","penguin","rabbit","ram","rhinoceros","seal","sheep","skunk",
-    "sloth","snail","snake","tiger","turkey","whale","worm"
+    "ANT","BADGER","BEAVER","BISON","BUFFALO","CAMEL","CAT","CHICKEN",
+    "COW","DUCK","MONKEY","MOUSE","OCTOPUS","ORANGUTAN","OTTER","OX",
+    "PARROT","PENGUIN","RABBIT","RAM","RHINOCEROS","SEAL","SHEEP","SKUNK",
+    "SLOTH","SNAIL","SNAKE","TIGER","TURKEY","WHALE","WORM"
 ];
 let currentIndex = Math.floor(Math.random() * animals.length);
 

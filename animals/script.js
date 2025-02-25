@@ -21,7 +21,7 @@ function clicked() {
 
 let clicks = -1;
 let animals = [
-    "ANT","BADGER","BEAVER","BISON","BUFFALO","CAMEL","CAT","CHICKEN",
+    "ant","badger","BEAVER","BISON","BUFFALO","CAMEL","CAT","CHICKEN",
     "COW","DUCK","MONKEY","MOUSE","OCTOPUS","ORANGUTAN","OTTER","OX",
     "PARROT","PENGUIN","RABBIT","RAM","RHINOCEROS","SEAL","SHEEP","SKUNK",
     "SLOTH","SNAIL","SNAKE","TIGER","TURKEY","WHALE","WORM"

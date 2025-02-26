@@ -20,7 +20,6 @@ function clicked() {
 function pushImage() {
     url = "url('assets/images/" + animals[currentIndex].toLowerCase() + ".svg')";
     img.style.backgroundImage = url;
-    console.log(url);
 }
 
 let clicks = -1;

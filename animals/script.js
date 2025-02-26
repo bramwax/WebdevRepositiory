@@ -1,7 +1,6 @@
 function clicked() {
     if (clicks == -1) {
-        url = "url('assets/images/" + animals[currentIndex] + ".svg')";
-        img.style.backgroundImage = url;
+        pushImage();
         clicks = 0;
     } else if (clicks == 0) {
         txt.innerHTML = animals[currentIndex];
@@ -13,10 +12,15 @@ function clicked() {
             currentIndex++;
         }
         txt.innerHTML = "???";
-        url = "url('assets/images/" + animals[currentIndex] + ".svg')";
-        img.style.backgroundImage = url;
+        pushImage();
         clicks = 0;
     }
+}
+
+function pushImage() {
+    url = "url('assets/images/" + animals[currentIndex].toLowerCase() + ".svg')";
+    img.style.backgroundImage = url;
+    console.log(url);
 }
 
 let clicks = -1;

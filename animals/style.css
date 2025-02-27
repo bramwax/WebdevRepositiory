@@ -4,7 +4,6 @@ body {
     background-color: #ffbf0021;
     background-image: url('assets/images/back.svg');
     background-size: 32vh;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.6vw;
     line-height: 200%;
@@ -16,18 +15,16 @@ body {
     position: absolute;
     left: 50vw; top: 10vh;
     transform: translate(-50%, 0);
-
 }
 
 #image {
     width: 20vw; height: 20vw;
     background-size: 20vw;
     background-image: url('assets/images/start.svg');
-    /* border: 2px solid red; */
-    border-radius: 32px 32px 0px 0px;
+    border-radius: 2vw 2vw 0px 0px;
 }
 
 #text {
     background-color: rgba(221, 221, 221, 0.4);
-    border-radius: 0px 0px 32px 32px;
+    border-radius: 0px 0px 2vw 2vw;
 }
